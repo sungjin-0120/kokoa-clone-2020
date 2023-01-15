@@ -6,12 +6,26 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 /*screens*/
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body {
   height: 100vh;
+
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
