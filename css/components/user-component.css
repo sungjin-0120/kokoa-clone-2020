@@ -2,12 +2,21 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+}
+.chat {
   margin-bottom: 20px;
 }
 
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+.user-component__war {
+  display: flex;
+}
+.user-component__war span {
+  margin-left: 5px;
+  color: tomato;
 }
 .user-component__column__avtar {
   width: 70px;

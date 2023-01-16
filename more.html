@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freinds-KokoaTalk</title>
+    <title>More-KokoaTalk</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -23,20 +23,18 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+        <span class="dot" id="cog-dot"></span>
       </div>
     </header>
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends'Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
 
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -45,33 +43,44 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">KariNa</h4>
-            <!--<h6 class="user-component__subtitle">this text what ever</h6>-->
+            <div class="user-component__war">
+              <h6 class="user-component__subtitlet">+011 253 4862</h6>
+              <span><i class="fas fa-exclamation-circle"></i></span>
+            </div>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel__header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up"></i>
+      <div class="icon-row-icons">
+        <div class="icon-row-icons__icon">
+          <i class="far fa-calendar"></i><span>Calender</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://lh3.googleusercontent.com/ogw/AOh-ky1FyV6FvFeIB72bIjkMV5G45hODhnI4aB-MCk9zcw=s32-c-mo"
-              class="user-component__column__avtar user-component__column__avtar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+        <div class="icon-row-icons__icon">
+          <i class="far fa-grin-tongue"></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row-icons__icon">
+          <i class="fas fa-money-check"></i><span>Theme</span>
+        </div>
+        <div class="icon-row-icons__icon">
+          <i class="far fa-envelope"></i><span>Account</span>
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Kokoa story</span>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Kokoa story</span>
           </div>
         </div>
       </div>
@@ -80,13 +89,12 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="freinds.html"
-            ><i class="fas fa-user fa-2x"></i
-          ></a>
+          <a class="nav__link" href="freinds.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
             <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
@@ -98,7 +106,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
-            <span class="nav__dot"></span>
+            <span class="nav__dot dot"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
         </li>
